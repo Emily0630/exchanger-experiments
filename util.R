@@ -106,10 +106,10 @@ true_memberships <- list(
                                       "pages", "editor", "note", "month", "UID"))
     records$UID
   },
-  "nltcs" = {
-    records <- read.csv("datasets/proc_nltcs.csv.gz") %>% filter(STATE == 1)
-    records$SEQ
-  },
+  # "nltcs" = {
+  #   records <- read.csv("datasets/proc_nltcs.csv.gz") %>% filter(STATE == 1)
+  #   records$SEQ
+  # },
   "rest" = {
     records <- read.csv("datasets/fz-nophone.arff.gz", skip = 10, quote = "\"'",
                         strip.white = TRUE, header = FALSE,
