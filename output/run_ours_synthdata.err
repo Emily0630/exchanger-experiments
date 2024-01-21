@@ -16,8 +16,92 @@ The following objects are masked from ‘package:stats’:
 ✖ dplyr::filter()  masks stats::filter()
 ✖ dplyr::lag()     masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in (function (.x, .f, ..., .progress = FALSE)  : ℹ In index: 1.
-Caused by error in `validObject()`:
-! invalid class “ShiftedNegBinomRV” object: prob must be on the interval (0, 1]
-Calls: future_map ... resolve.list -> signalConditionsASAP -> signalConditions
-Execution halted
+Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-0.1_dist-conf-0_seed-0_ours_coupon_Sun_Jan_21_13_59_30_2024
+Completed sampling in 14.71273 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-1_dist-conf-0_seed-0_ours_coupon_Sun_Jan_21_13_59_30_2024
+Completed sampling in 11.93865 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-8_dist-conf-0_seed-0_ours_coupon_Sun_Jan_21_13_59_31_2024
+Completed sampling in 5.452991 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-100_dist-conf-0_seed-0_ours_coupon_Sun_Jan_21_13_59_32_2024
+Completed sampling in 5.122707 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-0.1_dist-conf-1_seed-0_ours_coupon_Sun_Jan_21_13_59_33_2024
+Completed sampling in 17.73751 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-1_dist-conf-1_seed-0_ours_coupon_Sun_Jan_21_13_59_35_2024
+Completed sampling in 12.8182 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-8_dist-conf-1_seed-0_ours_coupon_Sun_Jan_21_13_59_35_2024
+Completed sampling in 10.14697 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.Building index for 'zipcode' attribute.
+Building index for 'birth_month' attribute.
+Building index for 'birth_day' attribute.
+Building index for 'birth_year' attribute.
+Building index for 'gender' attribute.
+Building index for 'first_name' attribute.
+Building index for 'last_name' attribute.
+Experiment has prefix: synthdata_link-conf-mu-100_dist-conf-1_seed-0_ours_coupon_Sun_Jan_21_13_59_37_2024
+Completed sampling in 9.040891 secs
+Saving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.Saving 7 x 7 in imageSaving 7 x 7 in imageSaving 7 x 7 in imageDon't know how to automatically pick scale for object of type <mcmc>.
+Defaulting to continuous.`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.There were 16 warnings (use warnings() to see them)
