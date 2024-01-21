@@ -13,7 +13,7 @@ setwd("./datasets")
 source("load_synthdata.R")
 setwd("../")
 
-expt_configs <- transpose(expand.grid(link_conf_mu = c(0.1, 1, 8, 100), dist_conf = 0:1, seed = 0, exp_num_recs = 100))
+expt_configs <- transpose(expand.grid(link_conf_mu = c(0.1, 1, 8, 100), dist_conf = 0:1, seed = 0, exp_num_recs = 1000))
 
 future_map(expt_configs, function(e) {
   expt_name <- paste0("synthdata_link-conf-mu-", e$link_conf_mu, "_dist-conf-", 
@@ -27,8 +27,9 @@ future_map(expt_configs, function(e) {
   snbinom_var <- n_records^2
   snbinom_size <- (n_records - 1)^2 / (snbinom_var - n_records + 1)
   snbinom_prob <- (n_records - 1) / snbinom_var
-  clust_prior <- GeneralizedCouponRP(ShiftedNegBinomRV(snbinom_size, snbinom_prob), GammaRV(1, 1/100))
-
+  #clust_prior <- GeneralizedCouponRP(ShiftedNegBinomRV(snbinom_size, snbinom_prob), GammaRV(1, 1/100))
+  clust_prior <- PitmanYorRP(alpha = GammaRV(1, 1/100), d = BetaRV(1, 1))
+  
   distort_prior <- BetaRV(1, 4)
 
   attr_params <- c(
@@ -74,5 +75,5 @@ future_map(expt_configs, function(e) {
   model <- exchanger(records, attr_params, clust_prior)
 
   # Run for Coupon
-  run_ours(expt_name, model, true_membership, n_samples = 10, burnin_interval = 10)
+  run_ours(expt_name, model, true_membership, n_samples = 10, burnin_interval = 100)
 }, .options = furrr_options(packages=c("comparator", "exchanger", "clevr")))
