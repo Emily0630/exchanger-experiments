@@ -14,6 +14,8 @@ source("load_synthdata.R")
 setwd("../")
 
 expt_configs <- transpose(expand.grid(link_conf_mu = c(0.1, 1, 8, 100), dist_conf = 0:1, seed = 0, exp_num_recs = 1000))
+# Start measuring time
+start_time <- Sys.time()
 
 future_map(expt_configs, function(e) {
   expt_name <- paste0("synthdata_link-conf-mu-", e$link_conf_mu, "_dist-conf-", 
@@ -77,3 +79,9 @@ future_map(expt_configs, function(e) {
   # Run for Coupon
   run_ours(expt_name, model, true_membership, n_samples = 100, burnin_interval = 1000)
 }, .options = furrr_options(packages=c("comparator", "exchanger", "clevr")))
+# End measuring time
+end_time <- Sys.time()
+
+# Print the running time
+running_time <- end_time - start_time
+print(running_time)
