@@ -1,0 +1,45 @@
+$precision
+[1] 1
+
+$recall
+[1] 0.8166667
+
+$specificity
+[1] 1
+
+$sensitivity
+[1] 0.8166667
+
+$f1score
+[1] 0.8990826
+
+$accuracy
+[1] 0.9999775
+
+$balanced_accuracy
+[1] 0.9083333
+
+$homogeneity
+[1] 1
+
+$completeness
+[1] 0.9978724
+
+$v_measure
+[1] 0.9989351
+
+$rand_index
+[1] 0.9999775
+
+$adj_rand_index
+[1] 0.8990714
+
+$variation_info
+[1] 0.01453151
+
+$mutual_info
+[1] 6.815431
+
+$fowlkes_mallows
+[1] 0.9036961
+
