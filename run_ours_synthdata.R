@@ -13,7 +13,7 @@ setwd("./datasets")
 source("load_synthdata.R")
 setwd("../")
 
-expt_configs <- transpose(expand.grid(link_conf_mu = c(0.1, 1, 8, 100), dist_conf = 0:1, seed = 0, exp_num_recs = 1000))
+expt_configs <- transpose(expand.grid(link_conf_mu = c(0.1, 1, 8, 100), dist_conf = 0:1, seed = 0, exp_num_recs = 100))
 
 future_map(expt_configs, function(e) {
   expt_name <- paste0("synthdata_link-conf-mu-", e$link_conf_mu, "_dist-conf-", 
@@ -74,5 +74,5 @@ future_map(expt_configs, function(e) {
   model <- exchanger(records, attr_params, clust_prior)
 
   # Run for Coupon
-  run_ours(expt_name, model, true_membership, n_samples = 10000, burnin_interval = 100000)
+  run_ours(expt_name, model, true_membership, n_samples = 10, burnin_interval = 10)
 }, .options = furrr_options(packages=c("comparator", "exchanger", "clevr")))
